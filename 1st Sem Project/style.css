@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: #eef2f5;
+    color: #222;
+    cursor: default;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #111;
+}
+
+header h2{
+    color: #fff;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+header li{
+    color: #fff;
+    padding: 5px 8px;
+    transition: transform 0.3s;
+}
+
+header li:hover{
+    transform: translateY(-2px);
+}
+
+.models{
+    padding: 20px 15px;
+    background: #fff;
+}
+
+.models h2{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.model-detail{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #f8f8f8;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.model-img img{
+    width: 220px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.model-img img:hover{
+    transform: scale(1.05);
+}
+
+.model-info{
+    max-width: 400px;
+}
+
+.model-info h3{
+    margin-bottom: 6px;
+    color: #e82127;
+}
+
+.model-info p{
+    margin-bottom: 4px;
+}
+
+.price{
+    font-weight: bold;
+    color: #00796b;
+}
+
+.section-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #dde3e8;
+    padding: 20px 15px;
+    margin-top: 10px;
+}
+
+.section-flex img{
+    width: 280px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.section-flex img:hover{
+    transform: scale(1.05);
+}
+
+.news{
+    padding: 20px 15px;
+    background: #fff;
+}
+
+.news h2{
+    text-align: center;
+}
+
+.news-list{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.news-item{
+    width: 200px;
+    background: #f7f7f7;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.news-item img{
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.news-item img:hover{
+    transform: scale(1.05);
+}
+
+footer{
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
