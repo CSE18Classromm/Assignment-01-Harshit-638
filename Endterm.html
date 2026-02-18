@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Responsive Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:#f2f2f2;
+}
+
+nav{
+background:#00695c;
+color:white;
+display:flex;
+justify-content:space-around;
+align-items:center;
+padding:12px;
+}
+
+.menu{
+display:flex;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+margin:0 10px;
+padding:5px 8px;
+}
+
+.menu a:hover{
+background:white;
+color:#00695c;
+}
+
+.main{
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:15px;
+padding:20px;
+}
+
+.content{
+background:white;
+padding:20px;
+}
+
+.sidebar{
+background:#c8e6c9;
+padding:20px;
+}
+
+@media(max-width:600px){
+.main{
+grid-template-columns:1fr;
+}
+.menu{
+flex-direction:column;
+}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div>My Webpage</div>
+<div class="menu">
+<a href="#">Home</a>
+<a href="#">Profile</a>
+<a href="#">Gallery</a>
+<a href="#">Contact</a>
+</div>
+</nav>
+
+<div class="main">
+<div class="content">
+<h2>Main Content</h2>
+<p>This is main section.</p>
+</div>
+
+<div class="sidebar">
+<h3>Sidebar</h3>
+<p>This is side area.</p>
+</div>
+</div>
+
+</body>
+</html>
